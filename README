@@ -1,0 +1,8 @@
+LazyDJ from Mixcloud
+====================
+
+LazyDJ is an application thrown together in a couple of hours at the London MusicHackDay 2010 (http://london.musichackday.org/2010/) to demonstrate some of the abilities of the Mixcloud API (http://api.mixcloud.com/).
+
+To use LazyDJ go to http://lazydj.mixcloud.com/ and type the name of a track. Search results will be shown, click the one you are interested in. LazyDJ will then search Mixcloud to find which tracks DJs have played after the selected track. You can continue clicking tracks to find other tracks that have been played next. The idea behind it is that you're DJing at a party and don't know what to play next - since you're lazy - so you use the collective knowledge of Mixcloud DJs to choose the next track.
+
+LazyDJ has been optimised for mobile devices and probably doesn't work in all desktop browsers (Firefox and Chrome have been tested).

@@ -1,0 +1,195 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: default;
+}
+
+.loader
+{
+    background-image: url(loader-359.gif);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 40px;
+    clear: both;
+}
+
+.form-input-hint
+{
+    font-style: italic;
+    color: #bbb;
+}
+
+#search
+{
+    clear: both;
+}
+
+#loader
+{
+    background-image: url(ajax-loader.gif);
+    background-position: 0 50px;
+    background-repeat: no-repeat;
+    float: right;
+    height: 80px;
+    width: 32px;
+}
+
+#logo
+{
+    margin: 10px 10px 0 10px;
+}
+
+#search-input
+{
+    border: none;
+    font-size: 120%;
+    outline: none;
+}
+
+#search-box
+{
+    padding: 5px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.button
+{
+    display: block;
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: #67c 2px 2px;
+    padding: 15px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px;
+    background-color: #79e;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    clear: both;
+}
+
+h3, h4
+{
+    margin: 0;
+    padding: 0;
+}
+
+h3
+{
+    color: #fff;
+    text-shadow: #67c 2px 2px;
+}
+
+h4
+{
+    color: #eee;
+    text-shadow: #888 1px 1px;
+    font-weight: normal;
+}
+
+body
+{
+    background-image: url(bg.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: #359;
+}
+
+#results
+{
+    clear: both;
+}
+
+#results, ul.track
+{
+    margin: 0;
+    padding: 0;
+}
+
+#results li, ul.track li, #selected-result, #playlist-not-found
+{
+    background-color: #79e;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#selected-result, #playlist-not-found
+{
+    margin: 10px;
+    cursor: default;
+    background-color: #7e9;
+    clear: both;
+}
+
+#selected-result h3, #playlist-not-found h3
+{
+    text-shadow: #6c7 2px 2px;
+}
+
+#results li
+{
+    margin: 0 10px 10px 10px;
+}
+
+ul.track
+{
+    clear: both;
+}
+
+ul.track li
+{
+    width: 10px;
+    float: left;
+    margin: 0 0 10px 10px;
+}
+
+ul.track li.chosen
+{
+    background-color: #e55;
+}
+
+ul.track li.chosen h3
+{
+    text-shadow: #c76 2px 2px;
+}
+
+ul.track li.not-chosen
+{
+    background-color: #dde;
+}
+
+ul.track li.not-chosen h3
+{
+    color: #fff;
+    text-shadow: #ccc 2px 2px;
+}
+
+#results h3
+{
+    font-size: 110%;
+}
+
+#results h4
+{
+    font-size: 80%;
+}
+
+#playlist h3
+{
+    font-size: 100%;
+}
+
+#playlist h4
+{
+    font-size: 75%;
+}
