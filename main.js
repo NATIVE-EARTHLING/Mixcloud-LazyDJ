@@ -69,12 +69,28 @@ var LazyDJ = {
                         }
                     }
                 
-                $.getJSON(LazyDJ.host + '/search/?type=track&q=' + encodeURIComponent(q) + '&limit=10&callback=?', function(response)
-                    {
-                        results = response.data;
+                var getTO = null, parts = q.split('-'), artistSlug, trackSlug;
+
+                if (parts && parts.length > 1) {
+                     artistSlug = $.trim(parts[0]).toLowerCase().replace(' ', '-').replace(/[^a-zA-Z0-9_-]/g, '').replace(/-+/g, '-');
+                     trackSlug = $.trim(parts[1]).toLowerCase().replace(' ', '-').replace(/[^a-zA-Z0-9_-]/g, '').replace(/-+/g, '-');
+
+                     $.getJSON(LazyDJ.host + '/track/' + artistSlug + '/' + trackSlug + '/?callback=?', function(response) {
+                        results = [response];
                         addResults();
+                        if (getTO !== null) {
+                            clearTimeout(getTO);
+                            getTO = null;
+                        }
                     });
-                
+                }
+
+                getTO = setTimeout(function() {
+                    getTO = null;
+                    $('#start-again-button').fadeIn(500);
+                    LazyDJ.hideLoader();
+                }, 2000);
+
                 $('#search').slideUp(500, function()
                     {
                         LazyDJ.showLoader();
